@@ -8,5 +8,9 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background('#002E5F');
+  push();
+  fill('#F0E35E');
+  ellipse(49,192,65);
+  pop();
 }
