@@ -1,3 +1,11 @@
+
+let img;
+let img2;
+
+function preload(){
+  img = loadImage('../images/Asset4.svg');
+  img2 = loadImage('../images/cherry.svg');
+}
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -7,10 +15,14 @@ function setup() {
   myCanvas.parent("canvas-parent");
 }
 
+// function preload(){
+//   img = loadImage("C:\Users\Evelyn\Downloads\Asset 4.svg");
+  
+//}
 function draw() {
   background('#002E5F');
-  push();
-  fill('#F0E35E');
-  ellipse(49,192,65);
-  pop();
+  ellipse(47,192,45);
+  image(img,0,0);
+  
+
 }
