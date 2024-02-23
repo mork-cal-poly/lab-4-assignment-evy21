@@ -1,6 +1,7 @@
 
 let img;
 let img2;
+let c= 'white';
 
 function preload(){
   img = loadImage('../images/Asset4.svg');
@@ -15,14 +16,34 @@ function setup() {
   myCanvas.parent("canvas-parent");
 }
 
-// function preload(){
-//   img = loadImage("C:\Users\Evelyn\Downloads\Asset 4.svg");
-  
-//}
 function draw() {
   background('#002E5F');
   ellipse(47,192,45);
   image(img,0,0);
-  
-
+  drawCircles(c);
+}
+function drawCircles(col){
+  push();
+  fill(col)
+  ellipse(70,30,15);
+  ellipse(70,90,15);
+  ellipse(70,150,15);
+  ellipse(70,270,15);  
+  ellipse(70,330,15);
+  ellipse(70,390,15);
+  ellipse(160,30,15);
+  ellipse(160,150,15);
+  ellipse(160,270,15);
+  ellipse(160,390,15);
+  ellipse(250,90,15);
+  ellipse(250,150,15);
+  ellipse(250,270,15);
+  ellipse(250,330,15);
+  ellipse(250,390,15);
+  ellipse(340,30,15);
+  ellipse(340,150,15);
+  ellipse(340,210,15);
+  ellipse(340,270,15);
+  ellipse(340,390,15);
+  pop();
 }
