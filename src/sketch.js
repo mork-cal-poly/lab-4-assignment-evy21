@@ -52,13 +52,16 @@ if (Pac==160){
   eat = true;
 }
 
-// eats ghost and background changes again
+// eats ghost and background changes back
 if (Pac==250){ 
   c='white';
   b = '#002E5F';
   eat= false;
   ghost = true;
 }
+
+// Pacman starting point
+drawPacman(Pac,210);
 
 }
 
