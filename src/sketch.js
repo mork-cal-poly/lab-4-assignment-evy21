@@ -39,6 +39,12 @@ drawGhosts(340,330,0.15);
 drawCherry(160,77,0.15);
 drawCherry(250,31,0.15);
 
+// draw circles
+drawCircles(c);
+
+// Pacman animation
+Pac = Pac + pacSpeed;
+
 }
 
 function drawPacman(x,y){
