@@ -8,12 +8,13 @@ function preload(){
   img2 = loadImage('../images/cherry.svg');
 }
 function setup() {
-  // These lines are fitting our canvas
-  // where we want in the DOM
-  // so that we can manipulate its style
-  // easier
   let myCanvas = createCanvas(400, 400);
   myCanvas.parent("canvas-parent");
+}
+
+function preload(){
+  img = loadImage('Asset4.svg');
+  img2 = loadImage('cherry.svg');
 }
 
 function draw() {
