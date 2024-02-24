@@ -7,6 +7,7 @@ let pacSpeed = 0;
 let b = '#002E5F';
 let eat = false;
 let ghost = false;
+let rotation = 0;
 
 function preload(){
   img = loadImage('../images/Asset4.svg');
@@ -31,8 +32,13 @@ function draw() {
 drawGhosts(160,330,0.15);
 drawGhosts(340,90,0.15);
 drawGhosts(340,330,0.15);
-  // image(img,0,0);
-  // drawCircles(c);
+  
+  // draw cherries
+  if (eat==false)
+  drawCherry(160,210,0.25);
+drawCherry(160,77,0.15);
+drawCherry(250,31,0.15);
+
 }
 
 function drawPacman(x,y){
