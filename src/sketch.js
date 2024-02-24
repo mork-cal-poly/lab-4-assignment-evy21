@@ -21,6 +21,7 @@ function draw() {
   image(img,0,0);
   drawCircles(c);
 }
+
 function drawCircles(col){
   push();
   fill(col)
@@ -47,7 +48,7 @@ function drawCircles(col){
   pop();
 }
 
-function drawCherry(){
+function drawCherry(x,y,s){
   push();
   translate(x,y);
   if(eat)
@@ -56,5 +57,8 @@ function drawCherry(){
   imageMode(CENTER);
   image(img2,0,0);
   pop();
+}
+function mouseClicked() {
+  pacSpeed = 1;
 }
 
