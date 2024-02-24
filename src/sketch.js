@@ -1,7 +1,7 @@
 
 let img;
 let img2;
-let c= 'white';
+let c= '#FFFFFF';
 let Pac = 50;
 let pacSpeed = 0;
 let b = '#002E5F';
@@ -16,11 +16,6 @@ function preload(){
 function setup() {
   let myCanvas = createCanvas(400, 400);
   myCanvas.parent("canvas-parent");
-}
-
-function preload(){
-  img = loadImage('Asset4.svg');
-  img2 = loadImage('cherry.svg');
 }
 
 function draw() {
@@ -47,14 +42,14 @@ Pac = Pac + pacSpeed;
 
 // If touches eats cherry
 if (Pac==160){ 
-  c='red';
-  b = 'white';
+  c='#FC0101';
+  b = '#FFFFFF';
   eat = true;
 }
 
 // eats ghost and background changes back
 if (Pac==250){ 
-  c='white';
+  c='#FFFFFF';
   b = '#002E5F';
   eat= false;
   ghost = true;
