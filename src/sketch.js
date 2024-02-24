@@ -22,6 +22,11 @@ function draw() {
   drawCircles(c);
 }
 
+function drawPacman(x,y){
+  fill('#F0E35E');
+  arc(x,y,65,65,0,7*PI/4);
+}
+
 function drawGhosts(x,y,s){
   push();
   translate(x,y);
@@ -69,6 +74,7 @@ function drawCherry(x,y,s){
   image(img2,0,0);
   pop();
 }
+
 function mouseClicked() {
   pacSpeed = 1;
 }
