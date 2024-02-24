@@ -22,6 +22,17 @@ function draw() {
   drawCircles(c);
 }
 
+function drawGhosts(x,y,s){
+  push();
+  translate(x,y);
+  scale(s);
+  if(ghost)
+    rotate(rotation)
+  imageMode(CENTER);
+  image(img,0,0);
+  pop();
+}
+
 function drawCircles(col){
   push();
   fill(col)
