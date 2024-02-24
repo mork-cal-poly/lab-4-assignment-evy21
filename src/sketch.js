@@ -18,7 +18,6 @@ function setup() {
 
 function draw() {
   background('#002E5F');
-  ellipse(47,192,45);
   image(img,0,0);
   drawCircles(c);
 }
@@ -47,3 +46,15 @@ function drawCircles(col){
   ellipse(340,390,15);
   pop();
 }
+
+function drawCherry(){
+  push();
+  translate(x,y);
+  if(eat)
+    rotate(rotation);
+  scale(s);
+  imageMode(CENTER);
+  image(img2,0,0);
+  pop();
+}
+
