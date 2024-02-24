@@ -63,6 +63,9 @@ if (Pac==250){
 // Pacman starting point
 drawPacman(Pac,210);
 
+// Cherry animation when eat
+rotation= rotation + 0.15;
+
 }
 
 function drawPacman(x,y){
