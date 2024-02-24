@@ -2,6 +2,11 @@
 let img;
 let img2;
 let c= 'white';
+let Pac = 50;
+let pacSpeed = 0;
+let b = '#002E5F';
+let eat = false;
+let ghost = false;
 
 function preload(){
   img = loadImage('../images/Asset4.svg');
@@ -18,9 +23,16 @@ function preload(){
 }
 
 function draw() {
-  background('#002E5F');
-  image(img,0,0);
-  drawCircles(c);
+  background(b);
+
+  // drawghosts
+  if (ghost == false)
+  drawGhosts (250,210,0.25);
+drawGhosts(160,330,0.15);
+drawGhosts(340,90,0.15);
+drawGhosts(340,330,0.15);
+  // image(img,0,0);
+  // drawCircles(c);
 }
 
 function drawPacman(x,y){
