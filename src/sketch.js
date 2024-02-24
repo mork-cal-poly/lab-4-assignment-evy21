@@ -45,6 +45,13 @@ drawCircles(c);
 // Pacman animation
 Pac = Pac + pacSpeed;
 
+// If touches eats cherrie
+if (Pac==160){ 
+  c='red';
+  b = 'white';
+  eat = true;
+}
+
 }
 
 function drawPacman(x,y){
