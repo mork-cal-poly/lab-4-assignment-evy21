@@ -45,11 +45,19 @@ drawCircles(c);
 // Pacman animation
 Pac = Pac + pacSpeed;
 
-// If touches eats cherrie
+// If touches eats cherry
 if (Pac==160){ 
   c='red';
   b = 'white';
   eat = true;
+}
+
+// eats ghost and background changes again
+if (Pac==250){ 
+  c='white';
+  b = '#002E5F';
+  eat= false;
+  ghost = true;
 }
 
 }
